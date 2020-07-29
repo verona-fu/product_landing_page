@@ -1,0 +1,277 @@
+<html>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+crossorigin="anonymous">
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,600&display=swap');
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 50px 0 0;
+    line-height: 1.5;
+  }
+
+ iframe {
+   max-width: 90%;
+   flex-wrap: wrap;
+ }
+
+  img {
+    max-width: 100%;
+  }
+
+  section h2 {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .bg-yellow {
+    background-color: #FFDB15;
+  }
+
+  .btn {
+    background-color: #FFDB15;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #8a7400;
+    color: black;
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 25px;
+    text-decoration: none; #8a7400;
+    positation: relative;
+    transition: all 0.1s ease;
+  }
+
+  .btn:active {
+    box-shadow: 0 0 0 #8a7400;
+    transform: translate(2px, 2px);
+  }
+
+  .btn-ghost {
+    background-color: black;
+    color: #FFDB15;
+    box-shadow: none;
+    border: none;
+  }
+
+  .btn-ghost:active {
+    transform: none;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+/* Nav & Header */
+   nav {
+    background-color: #FFDB15;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.09);
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+  }
+
+  .nav-link {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+
+  .header-left {
+    padding-right: 20px;
+    width: 60%;
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+  }
+
+  /* Features Section */
+  .feature {
+    background: #FFDB15;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+    margin: 0 1.66%;
+    padding: 10px;
+    width: 30%;
+    text-align: center;
+  }
+
+  .feature i {
+    font-size : 30px;
+    margin-top: 15px;
+  }
+
+  .feature h2{
+    font-size: 18px;
+    margin-top: 5px;
+  }
+
+  .feature p {
+    font-size: 12px;
+    line-height:24px;
+  }
+
+  /* Form section */
+  form {
+    margin-bottom: 40px;
+  }
+
+  form .flex  {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  form input[type="email"] {
+    border-radius: 5px;
+    border: 0;
+    color: black;
+    display: inline-block;
+    font-size: 14px;
+    flex: 1;
+    padding: 10px 25px;
+    text-decoration: none; #8a7400;
+    positation: relative;
+    transition: all 0.1s ease;
+    margin-right: 10px;
+  }
+
+
+  /* Footer Styling */
+  footer {
+    background-color: black;
+    color: #FFDB15;
+    padding: 10px;
+    text-align: center;
+  }
+
+  footer .fa-heart {
+   color: red;
+  }
+
+  @media (max-width: 480px) {
+    .header-left, .header-right {
+      width: 100px;
+    }
+    .header-right {
+      order: 0;
+    }
+    .header-left {
+      order: 1;
+      padding-right: 20px;
+      text-align: center;
+    }
+    .header-left h1 {
+      display: none;
+    }
+    .feature {
+      margin: 10px;
+      width: 100px;
+    }
+    .flex input {
+      margin:  5px 10px;
+      width: 100%;
+    }
+  }
+  </style>
+
+<header id="header">
+
+
+  <nav id="nav-bar">
+    <a href="#header" class="nav-link">About</a>
+    <a href="#features" class="nav-link">Features</a>
+    <a href="#video-wrapper" class="nav-link">Video</a>
+    <a href="#join" class="nav-link">Join</a>
+  </nav>
+
+  <div class="container">
+    <div class="header-left">
+      <h1>Application Ideas</h1>
+      <p>Have you ever wanted to build something but you had no idea what
+         to do? Just as authors sometimes have "writers block" it's also true
+         for developers. This list is intended to solve this issue once and for all! 👍</p>
+       <a class="btn" href="#">Repo Link</a>
+    </div>
+    <div class="header-right">
+      <img id="header-img" src="https://github.com/florinpop17/app-ideas/raw/master/app-ideas.png" alt="thumbail"/>
+      </div>
+   </div>
+
+
+</header>
+
+<section id="features">
+
+  <h2>Features</h2>
+  <div class="container">
+    <div class="feature">
+      <i class="fas fa-users  "></i>
+      <h2>User Stories</h2>
+      <p>A list of User Stories which should be implemented (these stories act more as a guideline than
+        a forced list of To-Do's. Feel free to add your own stories if you want)</p>
+    </div>
+
+    <div class="feature">
+      <i class="fas fa-user-plus"></i>
+      <h2>Bouns Features</h2>
+      <p>A list of bonus features that not only improve the base project, but also your skills
+        at the same time (these are optional and should be attempted only after you have completed
+        the required user stories)</p>
+    </div>
+
+    <div class="feature">
+      <i class="fas fa-boxes"></i>
+      <h2>Resources and Examples</h2>
+      <p>All the resources and links to help you find what you need to complete the project</p>
+    </div>
+  </div>
+</section>
+
+<section id="video-wrapper">
+  <h2>Video</h2>
+  <div class="container">
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/I62d1bJ6BZo"
+    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
+    picture-in-picture" allowfullscreen></iframe>
+    </div>
+</section>
+
+<section id="join" class="bg-yellow">
+  <div class="container">
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <h2>Stay up-to date with what we're doing</h2>
+      <div class="flex">
+        <input id="email" name="email" type="email" placeholder="Enter your email..." />
+      <input id="submit" type="submit" class="btn btn-ghost" value="submit" />
+      </div>
+
+    </form>
+  </div>
+</section>
+
+
+<footer>
+  Made with <i class="fas fa-heart"></i> by Verona-fu
+</footer>
+
+
+ <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
